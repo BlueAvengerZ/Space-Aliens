@@ -1,0 +1,341 @@
+/* gir posisjon til hele body. */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* gir posisjon, bredde, høyde til bakgrunnsbildet. 
+Sier også at den skal være usynlig. */
+#bgn{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+/* gir posisjon, bredde, høyde til bakgrunnsvideo. 
+Sier også at den skal være synlig. */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+  }
+
+/* gir posisjon og sier at den skal være usynlig. */
+#canvas {
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    top: 50px;
+}
+
+/* gir posisjon, størresle, farge til teksten Score og tallet 0.
+Sier også at den skal være over alle. */
+.scorene {
+    font-family: sans-serif;
+    font-size: 18px;
+    position: fixed;
+    z-index: 999;
+    color: white;
+    left: 10px;
+    top: 8%;
+    margin: 0;
+}
+
+/* gir posisjon, størresle, farge  til teksten Score 
+   og dertter lager boks rundt den osv. */
+   #score {
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+}
+
+/* gir margin 0 til p1 klassen. */
+.p1 {
+     margin: 0;    
+   }
+
+/* gir margin 0 til p2 klassen. */
+.p2 {
+     margin: 0;    
+   }
+
+/* gir posisjon og bredde til health-barene for spilleren 1. */
+#player1 {
+    position: relative;
+    margin-right: 1050px;
+    width: 300px;
+}
+
+/* gir posisjon og bredde til health-barene for spilleren 2. */
+#player2 {
+    position: relative;
+    width: 300px;
+    margin-right: 50px;
+}
+
+/* gir posisjon, farge og sier at den skal 
+   være øverst (z-index) av alle andre health-barene, 
+   fordi den her er standard liv for spilleren 1 
+   når spillet starter. */
+#health-bar {
+    position: fixed;
+    z-index: 999;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+/* nedover til health-bar 10, gjør jeg det samme. Bare at 
+   z-index vil bli forandret, fordi health-barene 
+   skal vises basert liv spilleren 1. */
+#health-bar-1 {
+    position: fixed;
+    z-index: 998;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-2 {
+    position: fixed;
+    z-index: 997;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-3 {
+    position: fixed;
+    z-index: 996;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-4 {
+    position: fixed;
+    z-index: 995;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-5 {
+    position: fixed;
+    z-index: 994;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-6 {
+    position: fixed;
+    z-index: 993;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-7 {
+    position: fixed;
+    z-index: 992;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-8 {
+    position: fixed;
+    z-index: 991;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-9 {
+    position: fixed;
+    z-index: 990;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#health-bar-10 {
+    position: fixed;
+    z-index: 989;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+
+/* Jeg gjør det akkurat samme spilleren 2 som 
+   jeg gjorde med spilleren 1. */
+#player2-health-bar {
+    position: fixed;
+    z-index: 999;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-1 {
+    position: fixed;
+    z-index: 998;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-2 {
+    position: fixed;
+    z-index: 997;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-3 {
+    position: fixed;
+    z-index: 996;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-4 {
+    position: fixed;
+    z-index: 995;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-5 {
+    position: fixed;
+    z-index: 994;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-6 {
+    position: fixed;
+    z-index: 993;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-7 {
+    position: fixed;
+    z-index: 992;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-8 {
+    position: fixed;
+    z-index: 991;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-9 {
+    position: fixed;
+    z-index: 990;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+#player2-health-bar-10 {
+    position: fixed;
+    z-index: 989;
+    color: white;
+    right: -80px;
+    top: 1%;
+    margin: 0;
+    display: none;
+}
+
+
+/* skjuler game over skjerm. */
+#game-over {
+    display: none;
+}
+
+/* gir font, farge, posisjon, høyde og bredde 
+   til start og game over skjerm. */
+#start, #game-over {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height:200px;
+    width:250px;
+    text-align: center;
+}
+
+/* gir farge, font størrelse, posisjon, boks rundt knappene, hvor 
+   runde de skal være og bredde osv.
+   til start og game over knappene. */
+#start a, #game-over a {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+}
+
+/* når du tar pilen over knappene skal det 
+   komme hvit bakgrunnsfarge og blå farge. */
+#start a:hover, #game-over a:hover { 
+background-color: #ffffff; 
+color: #1bafdb; 
+}

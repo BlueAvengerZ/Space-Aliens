@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Aliens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+<!-- legger til spill bakgrunn, kommer etter spillet har startet.-->
+<img src="Bilder/star.gif" alt="star" id ="bgn">
+
+<!-- legger til spill intro.-->
+  <video autoplay loop id="myVideo">
+    <source src="Video/game-intro.mp4" type="video/mp4">
+  </video>
+
+<!-- legger til banen eller området og gir id til den osv.-->
+<canvas id ="canvas"></canvas>
+
+<!-- legger til div, gir den id og legger til Start Game knappen osv.-->
+  <div id="start">
+   <a href="#" onclick="singleGame()">Single Player</a>
+   <a href="#" onclick="coopGame()">CO-OP</a>
+  </div>
+
+<!-- legger til div, gir den id og legger til Try Again knappen osv.-->
+  <div id ="game-over">
+   <h1>Game Over</h1>
+   <p id="yourScore"></p>
+   <a href="index.html">Try Again</a>
+  </div>
+    <!-- legger til klasse for Score og legger setter inn Score 
+         teksten og tallet 0. Dertter gir begge span id osv.-->
+       <p class= "scorene">
+        <span id="score">Score: 
+        <span id="score2">0</span></span> 
+      </p>
+
+    <!-- lager klasse for health bar, sette health bildene i span
+          Dertter gir span og selve heath-bar id. 
+          Dette her er for spilleren 1. -->
+      <p class="p1">
+        <span id="health-bar"><img src="Bilder/health-bar.png" id="player1"></span>
+        <span id="health-bar-1"><img src="Bilder/health-bar-1.png" id="player1"></span>
+        <span id="health-bar-2"><img src="Bilder/health-bar-2.png" id="player1"></span>
+        <span id="health-bar-3"><img src="Bilder/health-bar-3.png" id="player1"></span>
+        <span id="health-bar-4"><img src="Bilder/health-bar-4.png" id="player1"></span>
+        <span id="health-bar-5"><img src="Bilder/health-bar-5.png" id="player1"></span>
+        <span id="health-bar-6"><img src="Bilder/health-bar-6.png" id="player1"></span>
+        <span id="health-bar-7"><img src="Bilder/health-bar-7.png" id="player1"></span>
+        <span id="health-bar-8"><img src="Bilder/health-bar-8.png" id="player1"></span>
+        <span id="health-bar-9"><img src="Bilder/health-bar-9.png" id="player1"></span>
+        <span id="health-bar-10"><img src="Bilder/health-bar-10.png" id="player1"></span>
+      </p>
+
+      <!-- gjør det samme med spilleren 2. -->
+      <p class="p2">
+        <span id="player2-health-bar"><img src="Bilder/health-bar.png" id="player2"></span>
+        <span id="player2-health-bar-1"><img src="Bilder/health-bar-1.png" id="player2"></span>
+        <span id="player2-health-bar-2"><img src="Bilder/health-bar-2.png" id="player2"></span>
+        <span id="player2-health-bar-3"><img src="Bilder/health-bar-3.png" id="player2"></span>
+        <span id="player2-health-bar-4"><img src="Bilder/health-bar-4.png" id="player2"></span>
+        <span id="player2-health-bar-5"><img src="Bilder/health-bar-5.png" id="player2"></span>
+        <span id="player2-health-bar-6"><img src="Bilder/health-bar-6.png" id="player2"></span>
+        <span id="player2-health-bar-7"><img src="Bilder/health-bar-7.png" id="player2"></span>
+        <span id="player2-health-bar-8"><img src="Bilder/health-bar-8.png" id="player2"></span>
+        <span id="player2-health-bar-9"><img src="Bilder/health-bar-9.png" id="player2"></span>
+        <span id="player2-health-bar-10"><img src="Bilder/health-bar-10.png" id="player2"></span>
+      </p>
+    <!-- linker spill.js.-->
+     <script src="spill.js"></script>
+
+    <!--
+     <script src="spilltest.js"></script>  
+    -->
+
+</body>
+</html>
+
